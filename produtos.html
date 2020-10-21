@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <script defer src="javascript/script.js"></script>
+    <title>Produtos - Full stack Eletron</title>
+</head>
+<body>
+    <!--Menu-->
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Página inicial</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="lojas.html">Nossas lojas</a></li>
+          <li><a href="contatos.html">Contatos</a></li>
+        </ul>   
+    </nav>
+    <!--fim do menu-->
+    <header><h1>Produtos</h1></header>
+    <hr>
+    <section id="categorias">
+        <h3>Categorias</h3>
+        <ul>
+            <li onclick="ExibirCategoria('geral')" class="categ">Geral (12)</li>
+            <li onclick="ExibirCategoria('geladeira')" class="cateImp">Geladeiras (3)</li>
+            <li onclick="ExibirCategoria('fogao')" class="catePar">Fogões (2)</li>
+            <li onclick="ExibirCategoria('microondas')" class="cateImp">Microondas (3)</li>
+            <li onclick="ExibirCategoria('lavaroupa')" class="catePar">Lavadoura de roupa (2)</li>
+            <li onclick="ExibirCategoria('lavalouca')" class="cateImp">Lava-louça (2)</li>
+            <p id="demo"></p>
+        </ul>
+    </section>
+        <!-- onmousemove="ColoqueiMouse(Event)" -->
+    <section id="produtos">
+        <div class="box-produto" id="microondas" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/microondas.png" alt="Microondas number 01" >
+            <br>
+            <p class="descricao">Microondas turbo brastem</p>
+            <hr>
+            <p class="descricao"><strike>R$ 7.389,00</strike></p>
+            <p class="preco">R$ 6.019,00</p>
+        </div>
+
+        <div class="box-produto" id="geladeira" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/geladeira.png" alt="Geladeira number 02"  >
+            <br>
+            <p class="descricao">Geladeira Frost 900 litros</p>
+            <hr>
+            <p class="descricao"><strike>R$ 10.389,00</strike></p>
+            <p class="preco">R$ 8.019,00</p>
+        </div>
+
+        <div class="box-produto" id="geladeira" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" > 
+            <img  src="./imagens/geladeira.png" alt="Geladeira number 03"  >
+            <br>
+            <p class="descricao">Geladeira Frost turbo 1200 litros</p>
+            <hr>
+            <p class="descricao"><strike>R$ 15.389,00</strike></p>
+            <p class="preco">R$ 12.019,00</p>
+        </div>
+
+
+        <div class="box-produto" id="geladeira" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/geladeira.png" alt="Geladeira number 01" >
+            <br>
+            <p class="descricao">Geladeira Frost Inverse 540 litros</p>
+            <hr>
+            <p class="descricao"><strike>R$ 6.389,00</strike></p>
+            <p class="preco">R$ 5.019,00</p>
+        </div>
+
+        <div class="box-produto" id="fogao" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" > 
+            <img  src="./imagens/Fogao.webp" alt="Fogão number 02"  >
+            <br>
+            <p class="descricao">Fogão very good</p>
+            <hr>
+            <p class="descricao"><strike>R$ 7.389,00</strike></p>
+            <p class="preco">R$ 6.019,00</p>
+        </div>
+
+        <div class="box-produto" id="fogao" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/Fogao.webp" alt="Fogão number 01" >
+            <br>
+            <p class="descricao">Fogão good</p>
+            <hr>
+            <p class="descricao"><strike>R$ 3.389,00</strike></p>
+            <p class="preco">R$ 2.019,00</p>
+        </div>
+
+        <div class="box-produto" id="microondas" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+        <img  src="./imagens/microondas.png" alt="Microondas number 02" >
+        <br>
+        <p class="descricao">Microondas good</p>
+        <hr>
+        <p class="descricao"><strike>R$ 4.389,00</strike></p>
+        <p class="preco">R$ 2.019,00</p>
+        </div>
+
+        <div class="box-produto" id="microondas" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/microondas.png" alt="Microondas number 03" >
+            <br>
+            <p class="descricao">Microondas very good</p>
+            <hr>
+            <p class="descricao"><strike>R$ 6.389,00</strike></p>
+            <p class="preco">R$ 3.019,00</p>
+        </div>
+
+        <div class="box-produto" id="lavalouca" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/LavaLouca.png" alt="Lava L number 01" >
+            <br>
+            <p class="descricao">Lava-louça Good</p>
+            <hr>
+            <p class="descricao"><strike>R$ 1.389,00</strike></p>
+            <p class="preco">R$ 519,00</p>
+        </div>
+
+        <div class="box-produto" id="lavalouca" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/LavaLouca.png" alt="Lava L number 02" >
+            <br>
+            <p class="descricao">Lava-louça very Good</p>
+            <hr>
+            <p class="descricao"><strike>R$ 2.389,00</strike></p>
+            <p class="preco">R$ 1.519,00</p>
+        </div>
+
+        <div class="box-produto" id="lavaroupa" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/lavadora.png" alt="Lavadora number 01" >
+            <br>
+            <p class="descricao">Lavadoura de Roupa Good</p>
+            <hr>
+            <p class="descricao"><strike>R$ 3.389,00</strike></p>
+            <p class="preco">R$ 2.019,00</p>
+        </div>
+
+        <div class="box-produto" id="lavaroupa" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
+            <img  src="./imagens/lavadora.png" alt="Lavadora number 02" >
+            <br>
+            <p class="descricao">Lavadoura de Roupa very Good</p>
+            <hr>
+            <p class="descricao"><strike>R$ 5.389,00</strike></p>
+            <p class="preco">R$ 4.019,00</p>
+        </div>
+        
+    </section>
+   
+
+    <!-- <br><br><br><br><br><br> -->
+
+     <!--Inicio - rodapé-->
+     <footer id="rodape">
+        <img src="./imagens/forma de pagamento daten - logos-cartoes_.jpg" alt="imagem de formas de pagamento">
+        &copy;Cronos Uchoa
+      </footer>
+      <!--fim - rodapé-->
+</body>
+</html>
