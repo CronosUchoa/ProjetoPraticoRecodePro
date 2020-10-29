@@ -1,3 +1,4 @@
+<?php include_once('conexaoBd.php');?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -7,15 +8,10 @@
         <title>Contatos - Full stack Eletron</title>
     </head>
     <body>
-    <!--Menu-->
-    <nav class="menu">
-		<ul>
-		  <li><a href="index.html">Página inicial</a></li>
-		  <li><a href="produtos.html">Produtos</a></li>
-		  <li><a href="lojas.html">Nossas lojas</a></li>
-		  <li><a href="contatos.html">Contatos</a></li>
-		</ul>   
-	  </nav>
+	<!--Menu-->
+	<?php
+	include_once('menu.html');
+	?>
 	  <!--fim do menu-->
 		<header>
 			<h2>Contatos</h2>
@@ -36,17 +32,35 @@
 		</section>
 
 		<section id="formulario">
-			<form action="">
+			<form name="contato" action="contatoFormBd.php" method="post">
 				<h4>Nome:</h4>
-				<input type="text">
+				<input type="text" name="nome">
 				<h4>Mensagem:</h4>
-				<textarea  name="" id="" cols="30" rows="10"></textarea><br>
+				<textarea  name="mensagem" id="" cols="30" rows="10"></textarea><br>
 				<input id="botao" type="submit" value="Enviar">
 	
 			</form>
 		</section>
 
-		<br><br><br>
+		<br><br><br><hr>
+
+		<?php
+
+            $sql = "select * from Contatos";
+            $result = $conn->query($sql);
+
+            if($result->num_rows > 0){
+                while($rows = $result->fetch_assoc()){
+					echo $rows[data] . "<br>";
+					echo $rows[nome] . "<br>";
+					echo $rows[mensagem] . "<br>" . "<hr>" . "<hr>";
+					// print_r($rows);
+					
+				}
+			}
+            
+		?>
+		
 
 	<!--Inicio - rodapé-->
 		<footer id="rodape">

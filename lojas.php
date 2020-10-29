@@ -9,14 +9,9 @@
     <body>
 
 	<!--Menu-->
-        <nav class="menu">
-            <ul>
-              <li><a href="index.html">Página inicial</a></li>
-              <li><a href="produtos.html">Produtos</a></li>
-              <li><a href="lojas.html">Nossas lojas</a></li>
-              <li><a href="contatos.html">Contatos</a></li>
-            </ul>   
-        </nav>
+    <?php
+   include_once('menu.html'); 
+   ?>
     <!--fim do menu-->
     <header>
         <h2>Nossas Lojas</h2>
