@@ -6,16 +6,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/estilo.css">
     <script defer src="javascript/script.js"></script>
     <title>Produtos - Full stack Eletron</title>
 </head>
 <body>
-    <!--Menu-->
-    <?php
+     <!--Menu-->
+     <?php
    include_once('menu.html');
    ?>
     <!--fim do menu-->
+<div class="container">
     <header><h1>Produtos</h1></header>
     <hr>
     <section id="categorias">
@@ -43,7 +45,7 @@
 
 
         <div class="box-produto" id="<?php echo $rows['categoria'];?>" onmousemove="ColoqueiMouse(this)" onmouseout="TireiMouse(this)" >
-            <img  src="<?php echo $rows["imagem"];?>" alt="Microondas number 01" >
+            <img src="<?php echo $rows["imagem"];?>" alt="Microondas number 01" >
             <br>
             <p class="descricao"><?php echo $rows["descricao"];?></p>
             <hr>
@@ -59,7 +61,7 @@
 
         ?> 
     </section>
-   
+</div>
 
     <!-- <br><br><br><br><br><br> -->
 
