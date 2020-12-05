@@ -1,0 +1,69 @@
+/* pagina produtos*/
+#categorias {
+    float: left;
+    width:24%;
+   
+}
+#categorias .cateImp:hover{
+background-color:aqua;
+padding: 10px;
+cursor: pointer;
+}
+#categorias .catePar:hover{
+background-color:aquamarine;
+padding: 10px; 
+cursor: pointer; 
+}
+#categorias .categ:hover{
+    background-color:rgba(000, 000, 88, 0.8);
+    padding: 10px; 
+    cursor: pointer;
+    font-weight: bold; 
+    color:white;
+    
+    }
+
+#produtos{
+    margin-top: 20px;
+    float: right;
+    width:100%;
+    text-align: center;
+    
+
+}
+ .box-produto {
+   
+   position: relative;
+   float: right;
+    width: 25%;
+    height: 250px;
+  
+    
+ }
+
+ .box-produto:hover
+  {
+   color: white;
+  }
+
+ .box-produto img {
+     width:80px;
+     height: 80px;
+    
+ }
+ .box-produto img:hover {
+    width:100px;
+    height: 100px;
+    cursor: pointer;
+   
+}
+
+ .preco {
+     color: red;
+     background-color: white;
+    
+ }
+
+ 
+
+/*fim pag prod*/
