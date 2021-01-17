@@ -6,9 +6,8 @@ import './Layout/Home.css'
 
 
 
-let localdaApiPHP = "http://localhost/main/MY/meus%20projetos/ReactJs/dog/src/componentes/Api/ConectContatos.php";
+// let localdaApiPHP = "http://localhost/main/MY/meus%20projetos/ReactJs/dog/src/componentes/Api/ConectContatos.php";
 
-// *
 
 export default class Contador extends Component {
    
@@ -19,7 +18,10 @@ export default class Contador extends Component {
             <div>
             <Menu></Menu>
             <div className="containe">
-                <form id="formM" name="contato" action={localdaApiPHP} method="post">
+                
+
+                <form id="formM" name="contato" action="http://localhost:8080/salvar" method="post">
+                
                     <div className="form-group">
                         <label for="nomeUsuario">Seu nome:</label>
                         <input type="text" class="form-control" id="nomeUsuario" name="nome" placeholder="Nome" />

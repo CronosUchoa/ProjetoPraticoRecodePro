@@ -15,7 +15,9 @@ export default class Produtos extends Component {
 
     
     exibirCarros(){
-        fetch("http://localhost/main/MY/meus%20projetos/ReactJs/dog/src/componentes/Api/ConectProdutos.php")
+        console.log('http://localhost:8080');
+        // fetch("http://localhost/main/MY/meus%20projetos/ReactJs/dog/src/componentes/Api/ConectProdutos.php")
+        fetch('http://localhost:8080')
         .then((response)=>response.json())
         .then((responseJson)=>
         {
