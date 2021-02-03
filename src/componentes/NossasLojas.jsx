@@ -1,13 +1,18 @@
-import React from 'react'
-import Menu from './Menu'
-import Footer from './Footer'
-import './Layout/NossasLojas.css'
+import React, {lazy,Suspense} from 'react'
+import './Layout/NossasLojas.css';
+// import Menu from './Menu'
+const Menu = lazy(()=> import('./Menu'));
+// import Footer from './Footer'
+const Footer = lazy(()=> import('./Footer'));
+
 
 const Nlojas = () => {
 
     return (
         <div>
+            <Suspense fallback={<p>Carregando Menu...</p>}>
             <Menu></Menu>
+            </Suspense>
             <div className="container">
                 <header>
                     <h2>Nossas Lojas</h2>
@@ -41,7 +46,9 @@ const Nlojas = () => {
                 </main>
             </div>
 
-            <Footer></Footer>
+            <Suspense fallback={<p>Carregando footer...</p>}>
+                <Footer/>
+            </Suspense>
         </div>
 
     )
